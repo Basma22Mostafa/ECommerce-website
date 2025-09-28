@@ -21,7 +21,7 @@ export default async function BrandsDetails({params}:{params:{id:string}}) {
                       <h4 className='text-sm text-start mt-2'>{data.slug}</h4>
                     </div>
                     <div>
-                      <Image src={data.image} alt="brand Img" />
+                      <Image src={data.image} width={300} height={500} alt="brand Img" />
                     </div>
                   </div>
                  <Link href={'/brands'}> <button className='py-3 cursor-pointer px-7 mt-5 me-5  bg-gray-400 hover:bg-gray-600 rounded-lg'>Close</button></Link>
