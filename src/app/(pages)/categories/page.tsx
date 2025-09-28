@@ -4,9 +4,16 @@ import { Icategory } from '@/app/interface/category-interface';
 import React from 'react'
 import CategoryDetails from '@/app/_components/categoryDetails/page';
 
-
+export const dynamic = "force-dynamic"
 export default async function Categories() {
       const categoriesList = await getAllCategories();
+       if (!categoriesList) {
+    return (
+      <div className="p-6 text-red-600">
+        Failed to load categories. Please try again later.
+      </div>
+    )
+  }
 
   return (
     <div className='w-[90%] mx-auto mt-5'>

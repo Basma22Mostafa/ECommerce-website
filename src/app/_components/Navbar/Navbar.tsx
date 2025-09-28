@@ -1,9 +1,8 @@
 
 'use client'
-import React, { useContext, useState } from 'react'
+import React, { useState } from 'react'
 import Link from 'next/link'
 import { signOut, useSession } from 'next-auth/react'
-import { CartContext } from '@/app/Context/CartContext'
 import CartButton from '../cartButton/page'
 
 export default function Navbar() {
