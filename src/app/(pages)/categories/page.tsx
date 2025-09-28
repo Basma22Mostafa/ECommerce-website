@@ -14,10 +14,7 @@ export default async function Categories() {
       {
         categoriesList.map((category : Icategory)=>{
           return(
-            // <div key={category._id} className='shadow-md rounded-lg border-1 border-gray-300 hover:shadow-green-700 transition-all duration-200'>
-            //   <img src={category.image} className='h-[300px] w-full  aspect-auto' alt="" />
-            //   <h3 className='text-center my-3 font-blod text-green-700 text-2xl'>{category.name}</h3>
-            // </div>
+            
              <CategoryDetails  key={category._id} data={category}></CategoryDetails>
           )
 

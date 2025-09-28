@@ -8,7 +8,6 @@ import CartButton from '../cartButton/page'
 
 export default function Navbar() {
   const { data: session, status } = useSession()
-  const { dataDetails } = useContext(CartContext)
   const [isOpen, setIsOpen] = useState(false)
 
   function logout() {
@@ -93,5 +92,4 @@ export default function Navbar() {
   )
 }
 
-/* Extra Tailwind helper class */
-const navLink = "block text-gray-600 hover:text-green-600 transition-all duration-200"
+
